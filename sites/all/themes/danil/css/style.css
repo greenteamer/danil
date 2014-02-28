@@ -83,29 +83,40 @@ h2 {
 }
 
 /*div settings*/
+.my_banner {
+	background: url(../img/bg.jpg) center no-repeat;
+	height: 800px;
+	margin-top: 20px;
+}
 .my_main_container {
 	padding: 60px 0;
-	background: #fff;
+	background-color: rgb(248,247,245);
 }
 .my_hight .jumbotron {
 	background: #fff;
 	padding: 0;
 }
 .my_hight {
-	padding: 60px 0;
-	background: #fff;
+	padding: 0 0 60px 0;
+	/*background: #fff;*/
+	background-color: rgb(248,247,245);
 }
 .under_footer {
 	padding: 60px 0;
-	background: #fff;
+	background-color: rgb(248,247,245);
 }
 .my_footer {
-	background-color: #313131;
+	background: url(../img/footer.jpg);
 }
 .my_footer .footer {
 	border: none;
 	color: #fff;
 	margin-top: 0;
+	min-height: 200px;
+}
+.footer.container img {
+	margin-top: -52px;
+	position: absolute;
 }
 #block-quicktabs-team-quicktabs  h2 {
 	text-align: center;
@@ -137,9 +148,40 @@ h2 {
 	color: #fff;
 }
 
+/*top*/
+#block-block-10 .phone {
+	font-size: 30px;
+	font-family: "eurofurence light";
+	float: left;
+	margin-top: 2px;
+}
+#block-block-10 .form_button {
+	float: left;
+	margin: 7px 0 0 20px;
+}
+.company {
+	margin-top: 180px;
+	font-size: 60px;
+	font-family: "eurofurence light";
+}
+.slogan_top{
+	font-size: 40px;
+	font-family: "eurofurence light";
+	color: #bbb;
+}
+.pro {
+	margin-top: 100px;
+	font-size: 60px;
+	font-family: "eurofurence light";
+}
+
+.main_top h2 {
+	text-align: left;
+}
+
 /*portfolio*/
 .portfolio {
-	background: #fff;
+	background-color: rgb(248,247,245);
 }
 .view-id-portfolio_view img {
 	width: 100%;
@@ -182,11 +224,24 @@ h2 {
 .center {
 	text-align: center;
 }
+#webform-component-phone .description {
+	margin-bottom: 10px;
+}
 
 /*contacts*/
 .contacts {
 	margin-top: 30px;
 	font-size: 30px;
+}
+
+/*buttons*/
+.btn-primary {
+	background-color: rgb(53,53,53);
+	border: none;
+}
+.btn-primary:hover {
+	background-color: rgb(254,172,70);
+	border: none;
 }
 
 
