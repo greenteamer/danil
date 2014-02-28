@@ -117,6 +117,11 @@ h2 {
 .footer.container img {
 	margin-top: -52px;
 	position: absolute;
+	z-index: 0;
+}
+#block-block-8 {
+	position: relative;
+	z-index: 1;
 }
 #block-quicktabs-team-quicktabs  h2 {
 	text-align: center;
