@@ -172,7 +172,13 @@ h2 {
 .slogan_top{
 	font-size: 40px;
 	font-family: "eurofurence light";
-	color: #bbb;
+	color: #919191;
+}
+.any {
+	margin-left:70px;
+}
+.ceiling {
+	margin-left: 140px;
 }
 .pro {
 	margin-top: 100px;
@@ -247,6 +253,12 @@ h2 {
 .btn-primary:hover {
 	background-color: rgb(254,172,70);
 	border: none;
+}
+#block-quicktabs-team-quicktabs img{
+	width: 120px;
+	height: auto;
+	float: left;
+	margin-right:  20px;
 }
 
 
