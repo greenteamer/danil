@@ -1,0 +1,215 @@
+.timer {
+  width: 81px;
+  height: 81px;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: .5em solid #f5f5f5;
+  border-radius: 100%;
+  position: relative; }
+  .timer:before, .timer:after {
+    content: '';
+    display: block;
+    position: absolute; }
+  .timer:before {
+    height: 12px;
+    width: 12px;
+    top: -26px;
+    border-radius: 100%;
+    left: 48%;
+    margin-left: -0.75em;
+    background: #f7661e;
+    border: 7px solid #f5f5f5; }
+  .timer:after {
+    width: 1em;
+    height: 1em;
+    background: #f5f5f5;
+    right: 0;
+    top: -0.25em;
+    border-radius: 100%; }
+
+.hand {
+  background: #f7661e;
+  height: 17px;
+  width: 17px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1.4em solid #f5f5f5; 
+}
+
+.hand:before, .hand:after {
+    content: '';
+    display: block;
+    position: relative; 
+}
+
+.hand:before {
+  width: .325em;
+  height: 1.54em;
+  top: -1.40em;
+  background: #f7661e
+  -webkit-animation: countdown 2s linear infinite;
+  -webkit-transform-origin: 50% 125%; 
+}
+
+@-webkit-keyframes countdown {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } 
+}
+
+
+#countdown_dashboard, #countdown_dashboard2 {
+  height: 64px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dash {
+  width: 60px;
+  height: 64px;
+  background: transparent url('../img/dash.png') 0 0 no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+
+.dash .digit {
+  font-size: 33px;
+  font-weight: 300;
+  float: left;
+  width: 29px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  position: relative;
+}
+
+.dash_title {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 4px;
+  font-size: 9px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#countdown_dashboard p, #countdown_dashboard2 p{
+  display: block;
+  float: left;
+  width: 60px;
+  text-align: left;
+  margin-top: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+ .form-top {
+  margin-top:  80px;
+  padding-top: 20px;
+  /*width: 380px;*/
+  height: 430px;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
+  moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
+  webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.29);
+  background-size: 100%;  
+}
+.form-label1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700; 
+  font-size: 15px;
+  margin-bottom: 0px;
+  color:#4080C6;
+  text-align: center;
+}
+.form-label2 {
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300; 
+  color: #f7661e; 
+}
+.form-label3 {
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400; 
+}
+.icon-lock {
+  font-size: 21px;
+  color:#fff;
+  position: absolute;
+  top:2px;
+  left:0px;
+  background: #aaa;
+  border-radius: 2px;
+  padding: 4px 8px;
+  border: 1px solid #888;
+}
+.confid {
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  padding-left: 50px;
+}
+.form-content {
+  padding: 20px;
+}
+.form input[type="text"] {
+  background-color: #FFF;
+  border: 1px solid #C7C8CA;
+  color: #171B20;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  height: 35px;
+  line-height: 14px;
+  padding: 4px 5px;
+  width: 340px;
+  font-size: 12px;
+}
+.form input[type="submit"] {
+  font-size: 13px;
+  border: 1px solid #527795;
+  -moz-box-shadow: inset 0 0 20px 1px #88ADC7;
+  -webkit-box-shadow: inset 0 0 20px 1px #88ADC7;
+  box-shadow: inset 0 0 20px 1px #88ADC7;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+  background-color: #29ABE2;
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+  margin: 0 auto 0;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 1.1;
+  background-repeat: no-repeat;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 10px;
+  display: block;
+  width: 340px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  outline: none;
+}
+.form input[type="submit"]:hover {
+  background-color: #2d6ca2;
+  background-position: 0 40px;
+}
+.form_button {
+  float: left;
+  margin: 7px 0 0 20px;
+}
